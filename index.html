@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WACSDLP3</title>
+
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="page-top">
+        <div class="page-head">
+            <strong class="company-name">WildAcademyCodeSchoolDevLocomotiveProject3</strong>
+            la meilleure des bests du turfu de toutes les écoles mondiales en développement Web en France
+        </div>
+        <h1 class="page-title">Inscription</h1>
+    </header>
+    <main class="page-content">
+        <form action="" method="post" class="signup" id="signup-form">
+            <section class="signup__step signup__step--active" id="wizard-step1" data-step="1">
+                <fieldset class="signup__part">
+                    <legend class="signup__title">Informations personnelles</legend>
+                    <div class="form-group">
+                        <label class="form-group__title" for="lastname">Civilité</label>
+                        <select class="form-group__field" name="gender" id="gender">
+                            <option value="0">Sélectionner</option>
+                            <option value="1">Madame</option>
+                            <option value="2">Monsieur</option>
+                        </select>
+                        <div class="form-group__error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__title" for="lastname">Nom</label>
+                        <input class="form-group__field" type="text" name="lname" id="lastname">
+                        <div class="form-group__error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__title" for="firstname">Prénom</label>
+                        <input class="form-group__field" type="text" name="fname" id="firstname">
+                        <div class="form-group__error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__title" for="email">Adresse email</label>
+                        <input class="form-group__field" type="email" name="email" id="email">
+                        <div class="form-group__error"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="form-group__validate form-group__validate--step">&Eacute;tape
+                            suivante &gt;</button>
+                    </div>
+                </fieldset>
+            </section>
+
+            <section class="signup__step" id="wizard-step2" data-step="2">
+                <fieldset class="signup__part">
+                    <legend class="signup__title">Adresse</legend>
+                    <div class="form-group">
+                        <label class="form-group__title" for="addr1">Adresse complète</label>
+                        <input class="form-group__field" type="text" name="address[]" id="addr1"
+                            placeholder="N° et rue">
+                        <div class="form-group__error"></div>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-group__field" type="text" name="address[]" id="addr2"
+                            placeholder="Complément d'adresse">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__title" for="cp">Code Postal</label>
+                        <input class="form-group__field" type="text" name="zipcode" id="cp">
+                        <div class="form-group__error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__title" for="city">Ville</label>
+                        <input class="form-group__field" type="text" name="city" id="city">
+                        <div class="form-group__error"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="form-group__validate form-group__validate--step">&Eacute;tape
+                            suivante &gt;</button>
+                    </div>
+                </fieldset>
+            </section>
+
+            <section class="signup__step" id="wizard-step3" data-step="3">
+                <fieldset class="signup__part">
+                    <legend class="signup__title">Informations professionnelles</legend>
+                    <div class="form-group">
+                        <label class="form-group__title" for="courses">Quelle formation t'intéresse ?</label>
+                        <select class="form-group__field form-group__field--dropdown" name="course" id="courses">
+                            <option value="0">Sélectionner</option>
+                            <option value="1">Fullstack Javascript</option>
+                            <option value="2">Fullstack PHP</option>
+                            <option value="3">Spécialisation Symfony</option>
+                            <option value="4">Spécialisation React</option>
+                            <option value="5">Spécialisation Fullstack</option>
+                            <option value="6">Spécialisation Data</option>
+                            <option value="7">Cobol</option>
+                            <option value="8">Fortran</option>
+                            <option value="9">Fullstack DevOps Engineer CEO</option>
+                            <option value="10">Gagner 2000 euros par mois sans rien faire</option>
+                        </select>
+                        <div class="form-group__error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-group__title" for="status">Quel est ton statut professionnel ?</label>
+                        <select class="form-group__field form-group__field--dropdown" name="status" id="status">
+                            <option value="0">Sélectionner</option>
+                            <option value="1">Salarié du secteur privé</option>
+                            <option value="2">Salarié du secteur public</option>
+                            <option value="3">Demandeur d'emploi</option>
+                        </select>
+                        <div class="form-group__error"></div>
+                    </div>
+                    <div class="form-group">
+                        <button type="button" class="form-group__validate form-group__validate--step">Aller au
+                            récapitulatif &gt;</button>
+                    </div>
+                </fieldset>
+            </section>
+            <section class="signup__step" id="recap">
+                <div class="recap-group">
+                    <span class="recap-group__title">Civilité</span>
+                    <span class="recap-group__value" id="recap-gender">qfq</span>
+                </div>
+                <div class="recap-group">
+                    <span class="recap-group__title">Nom</span>
+                    <span class="recap-group__value" id="recap-lastname">fqsdf</span>
+                </div>
+                <div class="recap-group">
+                    <span class="recap-group__title">Prénom</span>
+                    <span class="recap-group__value" id="recap-firstname">qfd</span>
+                </div>
+                <div class="recap-group">
+                    <span class="recap-group__title">Email</span>
+                    <span class="recap-group__value" id="recap-email">qdgf</span>
+                </div>
+                <div class="recap-group">
+                    <span class="recap-group__title">Adresse</span>
+                    <span class="recap-group__value" id="recap-addr1">qgfqd qdfgq g</span>
+                    <span class="recap-group__value" id="recap-addr2">qdfqdfdq</span>
+                </div>
+                <div class="recap-group">
+                    <span class="recap-group__title">Code postal</span>
+                    <span class="recap-group__value" id="recap-cp"></span>
+                </div>
+                <div class="recap-group">
+                    <span class="recap-group__title">Ville</span>
+                    <span class="recap-group__value" id="recap-city"></span>
+                </div>
+                <div class="recap-group">
+                    <span class="recap-group__title">Intéressé par la formation</span>
+                    <span class="recap-group__value" id="recap-courses"></span>
+                </div>
+                <div class="recap-group">
+                    <span class="recap-group__title">Statut professionnel actuel</span>
+                    <span class="recap-group__value" id="recap-status"></span>
+                </div>
+
+                <button class="form-group__validate">Valider mon inscription</button>
+            </section>
+        </form>
+    </main>
+    <footer class="page-bottom">
+        &copy; Tous droits réservés à la WildAcademyCodeSchoolDevLocomotiveProject3
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/utils.js"></script>
+</body>
+</html>
